@@ -4,7 +4,7 @@ import { Link } from "react-router";
 
 const CardSix = () => {
   const [crops, setCrops] = useState([]);
-  console.log(crops);
+  // console.log(crops);
   useEffect(() => {
     fetch("http://localhost:4000/crops")
       .then((res) => res.json())

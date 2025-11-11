@@ -28,7 +28,7 @@ const Cards = ({ crop }) => {
         </div>
         <div className="mt-5">
           <Link
-            to="/cardDetails"
+            to={`/crops/${crop._id}`}
             type="submit"
             className="w-[150px] px-5 py-2   rounded-lg text-white font-semibold bg-gradient-to-r from-green-600 to-green-800 hover:opacity-90"
           >

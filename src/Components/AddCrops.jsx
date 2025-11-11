@@ -18,6 +18,7 @@ const AddCrops = () => {
   const owner = {
     ...formData,
     owner: { ownerName: user.displayName, ownerEmail: user.email },
+    postedAt: new Date().toLocaleString(),
   };
   console.log(owner);
   //   const array = { ...formData, name: { name: "rafiq", age: 23 } };

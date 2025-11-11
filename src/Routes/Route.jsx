@@ -44,7 +44,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "/cardDetails",
+        path: "/crops/:id",
         element: (
           <PrivateRoute>
             <CardDetails></CardDetails>
