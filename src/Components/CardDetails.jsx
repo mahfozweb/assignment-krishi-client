@@ -11,7 +11,7 @@ const CardDetails = () => {
   const { user } = use(AuthContext);
   const [crops, setCrops] = useState({});
   console.log(crops?.owner?.ownerEmail);
-  console.log(interest);
+  console.log(crops);
 
   const {
     _id,
@@ -182,7 +182,17 @@ const CardDetails = () => {
             </form>
           </div>
         ) : (
-          interest.map((interest) => <Receive interest={interest}></Receive>)
+          <>
+            {interest.length > 0 ? (
+              interest.map((interest) => (
+                <Receive interest={interest}></Receive>
+              ))
+            ) : (
+              <h1 className="text-2xl text-red-400 font-semibold p-10">
+                Not have any crop interest List
+              </h1>
+            )}
+          </>
         )}
       </div>
       {/* recrive section */}

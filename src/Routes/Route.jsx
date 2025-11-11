@@ -9,6 +9,8 @@ import PrivateRoute from "./PrivateRoute";
 import AddCrops from "../Components/AddCrops";
 import Error from "../Pages/Error";
 import CardDetails from "../Components/CardDetails";
+import MyPost from "../Pages/MyPost";
+import EditModal from "../Pages/EditModal";
 
 const router = createBrowserRouter([
   {
@@ -48,6 +50,14 @@ const router = createBrowserRouter([
         element: (
           <PrivateRoute>
             <CardDetails></CardDetails>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/myPost",
+        element: (
+          <PrivateRoute>
+            <MyPost></MyPost>
           </PrivateRoute>
         ),
       },
