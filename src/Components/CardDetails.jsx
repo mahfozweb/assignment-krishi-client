@@ -7,10 +7,11 @@ import Receive from "./Receive";
 
 const CardDetails = () => {
   const [error, setError] = useState("");
-  const [owner, setOwner] = useState([]);
+  const [interest, setInterest] = useState([]);
   const { user } = use(AuthContext);
   const [crops, setCrops] = useState({});
   console.log(crops?.owner?.ownerEmail);
+  console.log(interest);
 
   const {
     _id,
@@ -33,6 +34,16 @@ const CardDetails = () => {
         setCrops(data);
       });
   }, [data.id]);
+
+  // interest
+  useEffect(() => {
+    fetch(`http://localhost:4000/interest/${crops._id}`)
+      .then((res) => res.json())
+      .then((data) => {
+        setInterest(data);
+        // console.log(data);
+      });
+  }, [crops._id]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -171,22 +182,7 @@ const CardDetails = () => {
             </form>
           </div>
         ) : (
-          <div>
-            <div>
-              <div className="card w-96 bg-base-100 card-md shadow-sm">
-                <div className="card-body">
-                  <h2 className="card-title">Medium Card</h2>
-                  <p>
-                    A card component has a figure, a body part, and inside body
-                    there are title and actions parts
-                  </p>
-                  <div className="justify-end card-actions">
-                    <button className="btn btn-primary">Buy Now</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          interest.map((interest) => <Receive interest={interest}></Receive>)
         )}
       </div>
       {/* recrive section */}
