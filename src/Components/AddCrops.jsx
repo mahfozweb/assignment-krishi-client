@@ -27,6 +27,7 @@ const AddCrops = () => {
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+    e.target.reset();
   };
 
   const handleSubmit = async (e) => {
