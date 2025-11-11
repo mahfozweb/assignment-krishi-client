@@ -2,10 +2,8 @@ import React from "react";
 import { FaBangladeshiTakaSign } from "react-icons/fa6";
 import { Link } from "react-router";
 
-const Cards = ({ crop }) => {
+const Crops = ({ crop }) => {
   const { image, name, description, pricePerUnit, type } = crop;
-  //   console.log(data);
-
   return (
     <div className="card bg-base-100  shadow-sm">
       <figure>
@@ -40,4 +38,4 @@ const Cards = ({ crop }) => {
   );
 };
 
-export default Cards;
+export default Crops;

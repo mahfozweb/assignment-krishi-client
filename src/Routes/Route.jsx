@@ -8,6 +8,7 @@ import AllCrops from "../Components/AllCrops";
 import PrivateRoute from "./PrivateRoute";
 import AddCrops from "../Components/AddCrops";
 import Error from "../Pages/Error";
+import CardDetails from "../Components/CardDetails";
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,14 @@ const router = createBrowserRouter([
         element: (
           <PrivateRoute>
             <AddCrops></AddCrops>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/cardDetails",
+        element: (
+          <PrivateRoute>
+            <CardDetails></CardDetails>
           </PrivateRoute>
         ),
       },
