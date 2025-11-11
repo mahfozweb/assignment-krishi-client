@@ -1,22 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router";
 
-const MyPostDetails = ({ crop, editModalRef }) => {
+const MyPostDetails = ({ crop }) => {
   console.log(crop);
-  const [editCrop, setEditCrop] = useState({});
-  console.log(editCrop);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  useEffect(() => {
-    fetch(`http://localhost:4000/edit-crop/${crop._id}`)
-      .then((res) => res.json())
-      .then((data) => {
-        setEditCrop(data);
-      });
-  }, [crop._id]);
-  const handleEdit = () => {
-    editModalRef.current.showModal();
-  };
-
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
   return (
     <>
       <tbody>
@@ -28,7 +18,7 @@ const MyPostDetails = ({ crop, editModalRef }) => {
 
           <td>
             <button
-              onClick={handleEdit}
+              onClick={openModal}
               className="btn btn-xs md:btn-sm btn-primary"
             >
               Edit
@@ -45,21 +35,33 @@ const MyPostDetails = ({ crop, editModalRef }) => {
           </td>
         </tr>
       </tbody>
-      <div>
-        {/* Open the modal using document.getElementById('ID').showModal() method */}
+      <div className="p-4">
+        {/* <button className="bg-blue-500 text-white px-4 py-2 rounded">
+          Open Modal
+        </button> */}
 
-        <dialog ref={editModalRef} className="modal">
-          <div className="modal-box">
-            <h3 className="font-bold text-lg">Hello!</h3>
-            <p className="py-4">Press ESC</p>
-            <div className="modal-action">
-              <form method="dialog">
-                {/* if there is a button in form, it will close the modal */}
-                <button className="btn">Close</button>
-              </form>
+        {isModalOpen && (
+          <div className="fixed inset-0  bg-opacity-50 flex justify-center items-center">
+            <div className="bg-white p-6 rounded shadow-lg w-96 relative">
+              <h2 className="text-xl font-bold mb-4">{crop.name}</h2>
+              <p>This is a simple modal content.</p>
+
+              <button
+                className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
+                onClick={closeModal}
+              >
+                ✖
+              </button>
+
+              <button
+                className="mt-4 bg-green-500 text-white px-4 py-2 rounded"
+                onClick={closeModal}
+              >
+                Close
+              </button>
             </div>
           </div>
-        </dialog>
+        )}
       </div>
     </>
   );
