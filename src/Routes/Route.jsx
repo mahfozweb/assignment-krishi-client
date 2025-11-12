@@ -60,6 +60,7 @@ const router = createBrowserRouter([
             <MyPost></MyPost>
           </PrivateRoute>
         ),
+        
       },
     ],
   },
