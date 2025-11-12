@@ -103,12 +103,13 @@ const Header = () => {
                   Profile
                 </NavLink>
 
-                <button
+                <Link
+                  to="/myInterest"
                   //   onClick={signOutUser}
                   className="bg-black block w-full text-left px-4 py-2 hover:bg-green-400 font-bold text-white text-[15px] cursor-pointer"
                 >
                   My Interests
-                </button>
+                </Link>
                 <Link
                   to="/myPost"
                   //   onClick={signOutUser}

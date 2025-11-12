@@ -11,6 +11,7 @@ import Error from "../Pages/Error";
 import CardDetails from "../Components/CardDetails";
 import MyPost from "../Pages/MyPost";
 import EditModal from "../Pages/EditModal";
+import MyInterest from "../Pages/MyInterest";
 
 const router = createBrowserRouter([
   {
@@ -60,7 +61,14 @@ const router = createBrowserRouter([
             <MyPost></MyPost>
           </PrivateRoute>
         ),
-        
+      },
+      {
+        path: "/myInterest",
+        element: (
+          <PrivateRoute>
+            <MyInterest></MyInterest>
+          </PrivateRoute>
+        ),
       },
     ],
   },
