@@ -20,7 +20,7 @@ const Registration = () => {
     const password = event.target.password.value;
     const newUser = { name, email };
 
-    fetch("http://localhost:4000/users", {
+    fetch("https://assignment-krishi-server.vercel.app/users", {
       method: "POST",
       headers: {
         "content-type": "application/json",

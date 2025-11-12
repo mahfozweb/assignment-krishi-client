@@ -28,7 +28,7 @@ const CardDetails = () => {
   const data = useParams();
   //   console.log(data.id);
   useEffect(() => {
-    fetch(`http://localhost:4000/crops/${data.id}`)
+    fetch(`https://assignment-krishi-server.vercel.app/crops/${data.id}`)
       .then((res) => res.json())
       .then((data) => {
         setCrops(data);
@@ -37,7 +37,7 @@ const CardDetails = () => {
 
   // interest
   useEffect(() => {
-    fetch(`http://localhost:4000/interest/${crops._id}`)
+    fetch(`https://assignment-krishi-server.vercel.app/interest/${crops._id}`)
       .then((res) => res.json())
       .then((data) => {
         setInterest(data);
@@ -53,7 +53,7 @@ const CardDetails = () => {
     const status = e.target.status.value;
     const quantity = e.target.quantity.value;
     const newInterest = { cropId: _id, name, email, message, status, quantity };
-    fetch("http://localhost:4000/interest", {
+    fetch("https://assignment-krishi-server.vercel.app/interest", {
       method: "POST",
       headers: {
         "content-type": "application/json",

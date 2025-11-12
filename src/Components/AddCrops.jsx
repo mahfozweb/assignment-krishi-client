@@ -34,7 +34,7 @@ const AddCrops = () => {
     e.preventDefault();
     // console.log("Submitting Crop: ", formData);
 
-    fetch("http://localhost:4000/crops", {
+    fetch("https://assignment-krishi-server.vercel.app/crops", {
       method: "POST",
       headers: {
         "content-type": "application/json",

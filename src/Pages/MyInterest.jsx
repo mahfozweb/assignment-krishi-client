@@ -7,7 +7,9 @@ const MyInterest = () => {
   console.log(myInterest);
 
   useEffect(() => {
-    fetch(`http://localhost:4000/myInterest/${user.email}`)
+    fetch(
+      `https://assignment-krishi-server.vercel.app/myInterest/${user.email}`
+    )
       .then((res) => res.json())
       .then((data) => {
         setMyInterest(data);

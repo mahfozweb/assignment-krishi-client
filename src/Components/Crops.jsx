@@ -6,27 +6,26 @@ const Crops = ({ crop }) => {
   const { image, name, description, pricePerUnit, type } = crop;
   return (
     <div className="card bg-base-100  shadow-sm">
-      <figure>
-        <img src={image} alt="Shoes" />
+      <figure className="h-52 w-full overflow-hidden">
+        <img
+          src={image}
+          alt={name}
+          className="object-cover w-full h-full transition-transform duration-300 hover:scale-105"
+        />
       </figure>
-      <div className="card-body">
-        <h2 className="card-title">
-          {name}
-          <div className="badge badge-secondary">{type}</div>
-        </h2>
-        <p>{description}</p>
-
-        <div className="card-actions justify-center">
-          <div className="badge badge-secondary">
-            <span>
-              <FaBangladeshiTakaSign />
-            </span>{" "}
-            {pricePerUnit}
+      <div className="card-body flex flex-col justify-between flex-1">
+        <h2 className="card-title flex justify-between items-center w-full">
+          <span>{name}</span>
+          <div className="flex items-center gap-2">
+            <div className="badge badge-secondary">{type}</div>
+            <div className="badge badge-secondary flex items-center gap-1">
+              <FaBangladeshiTakaSign /> {pricePerUnit}
+            </div>
           </div>
-        </div>
+        </h2>
         <div className="mt-5">
           <Link
-            to="/cardDetails"
+            to={`/crops/${crop._id}`}
             type="submit"
             className="w-[150px] px-5 py-2   rounded-lg text-white font-semibold bg-gradient-to-r from-green-600 to-green-800 hover:opacity-90"
           >

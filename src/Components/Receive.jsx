@@ -3,14 +3,12 @@ import { toast } from "react-toastify";
 
 const Receive = ({ interest }) => {
   const [status, setStatus] = useState(interest.status || "Pending");
+  const [isDisabled, setIsDisabled] = useState(false);
 
-  const handleStatusChange = async (e) => {
-    const newStatus = e.target.value;
-    setStatus(newStatus);
-
+  const handleStatusUpdate = async (newStatus) => {
     try {
       const res = await fetch(
-        `http://localhost:4000/interest/${interest._id}`,
+        `https://assignment-krishi-server.vercel.app/interest/${interest._id}`,
         {
           method: "PUT",
           headers: {
@@ -21,6 +19,8 @@ const Receive = ({ interest }) => {
       );
 
       if (res.ok) {
+        setStatus(newStatus);
+        setIsDisabled(true);
         toast.success(`Status updated to ${newStatus}`);
       } else {
         toast.error("Failed to update status");
@@ -31,30 +31,69 @@ const Receive = ({ interest }) => {
     }
   };
 
-  return (
-    <div className="card m-5 bg-base-100 card-md shadow-sm">
-      <div className="card-body">
-        <h2 className="card-title">Buyer Name: {interest.name}</h2>
-        <h2 className="card-title">Quantity: {interest.quantity}</h2>
-        <h2 className="card-title">Buyer Email: {interest.email}</h2>
-
-        <div className="justify-start card-actions">
-          <button className="btn btn-primary">{interest.message}</button>
-        </div>
-
-        <div className="mt-3">
-          <label className="font-semibold">Status:</label>
-          <select
-            value={status}
-            onChange={handleStatusChange}
-            className="w-full p-2 border rounded"
-          >
-            <option value="Pending">Pending</option>
-            <option value="Accepted">Accepted</option>
-            <option value="Rejected">Rejected</option>
-          </select>
-        </div>
+  if (!interest) {
+    return (
+      <div className="text-center py-10 text-gray-500 text-lg">
+        No interests yet.
       </div>
+    );
+  }
+
+  return (
+    <div className="overflow-x-auto m-5">
+      <table className="table w-full border rounded-lg">
+        <thead className="bg-green-600 text-white">
+          <tr>
+            <th>Buyer Name</th>
+            <th>Buyer Email</th>
+            <th>Quantity</th>
+            <th>Message</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr className="hover">
+            <td>{interest.name}</td>
+            <td>{interest.email}</td>
+            <td>{interest.quantity}</td>
+            <td>{interest.message}</td>
+
+            <td>
+              <span
+                className={`badge ${
+                  status === "Accepted"
+                    ? "badge-success"
+                    : status === "Rejected"
+                    ? "badge-error"
+                    : "badge-warning"
+                }`}
+              >
+                {status}
+              </span>
+            </td>
+
+            <td className="flex flex-wrap gap-2">
+              <button
+                className="btn btn-sm btn-success"
+                disabled={isDisabled || status === "Accepted"}
+                onClick={() => handleStatusUpdate("Accepted")}
+              >
+                Accept
+              </button>
+
+              <button
+                className="btn btn-sm btn-error"
+                disabled={isDisabled || status === "Rejected"}
+                onClick={() => handleStatusUpdate("Rejected")}
+              >
+                Reject
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 };

@@ -33,13 +33,16 @@ const MyPost = () => {
       location,
     };
 
-    fetch(`http://localhost:4000/update/${selected._id}`, {
-      method: "PUT",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify(updateData),
-    })
+    fetch(
+      `https://assignment-krishi-server.vercel.app/update/${selected._id}`,
+      {
+        method: "PUT",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(updateData),
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         console.log("✅ Update Success:", data);
@@ -57,7 +60,9 @@ const MyPost = () => {
   };
 
   useEffect(() => {
-    fetch(`http://localhost:4000/mypost?email=${user.email}`)
+    fetch(
+      `https://assignment-krishi-server.vercel.app/mypost?email=${user.email}`
+    )
       .then((res) => res.json())
       .then((data) => {
         setCrops(data);
@@ -80,7 +85,7 @@ const MyPost = () => {
     );
     if (!confirmDelete) return;
 
-    fetch(`http://localhost:4000/delete/${id}`, {
+    fetch(`https://assignment-krishi-server.vercel.app/delete/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())
