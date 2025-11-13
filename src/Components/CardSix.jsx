@@ -6,7 +6,7 @@ const CardSix = () => {
   const [crops, setCrops] = useState([]);
   // console.log(crops);
   useEffect(() => {
-    fetch("https://assignment-krishi-server.vercel.app/crops")
+    fetch("https://assignment-krishi-server.vercel.app/latest-crops")
       .then((res) => res.json())
       .then((data) => {
         setCrops(data);

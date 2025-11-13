@@ -27,7 +27,8 @@ const MyInterest = () => {
           <table className="table w-full border text-sm md:text-base">
             <thead>
               <tr className="bg-gray-200">
-                <th>name</th>
+                <th>crop Name</th>
+                <th>crop owner</th>
                 <th>message</th>
                 <th>quantity</th>
 
@@ -37,7 +38,8 @@ const MyInterest = () => {
             {myInterest?.map((interest) => (
               <tbody>
                 <tr>
-                  <td>{interest.name}</td>
+                  <td>{interest.crop}</td>
+                  <td>{interest.ownerEmail}</td>
                   <td>{interest.message}</td>
                   <td>{interest.quantity}</td>
                   <td>{interest.status}</td>

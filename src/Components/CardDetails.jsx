@@ -11,8 +11,10 @@ const CardDetails = () => {
   const { user } = use(AuthContext);
   const [crops, setCrops] = useState({});
   console.log(crops?.owner?.ownerEmail);
-  console.log(crops);
 
+  const owner = crops?.owner?.ownerEmail;
+  const cropName = crops?.name;
+  console.log(cropName);
   const {
     _id,
     name,
@@ -52,7 +54,16 @@ const CardDetails = () => {
     const message = e.target.message.value;
     const status = e.target.status.value;
     const quantity = e.target.quantity.value;
-    const newInterest = { cropId: _id, name, email, message, status, quantity };
+    const newInterest = {
+      cropId: _id,
+      crop: cropName,
+      ownerEmail: owner,
+      name,
+      email,
+      message,
+      status,
+      quantity,
+    };
     fetch("https://assignment-krishi-server.vercel.app/interest", {
       method: "POST",
       headers: {
@@ -118,12 +129,13 @@ const CardDetails = () => {
 
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="flex flex-col">
-                <label className="label mb-1">Email</label>
+                <label className="label mb-1">Your Email</label>
                 <input
                   type="email"
+                  required
                   name="email"
                   className="input w-full"
-                  placeholder="Email"
+                  placeholder="provide your email"
                 />
               </div>
 

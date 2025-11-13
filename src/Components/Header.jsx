@@ -90,7 +90,7 @@ const Header = () => {
             )}
 
             {dropdownOpen && (
-              <div className="absolute right-0 mt-2 bg-white border shadow-lg rounded-md w-40 ">
+              <div className="absolute z-50 right-0 mt-2 bg-white border shadow-lg rounded-md w-40 ">
                 {/* <p className="p-2 text-center bg-blue-300 text-white font-bold cursor-pointer hover:bg-gray-500">
                   {user.displayName || "mahfoz"}
                 </p> */}
