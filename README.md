@@ -1,16 +1,21 @@
 # KrishiLink – Farmer’s Growth & Connection Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Crop Marketplace
 
-Currently, two official plugins are available:
+Users can browse a variety of crops available for sale and place orders directly from the platform, making buying and selling seamless.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Add Your Own Crops
 
-## React Compiler
+Farmers can easily list their own crops with details like price, quantity, type, and location to reach potential buyers.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Interest Requests & Status Management
 
-## Expanding the ESLint configuration
+When someone shows interest in a crop, the owner can accept, reject, or keep it pending, giving full control over transactions.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## User-Friendly Dashboard
+
+Both buyers and sellers have a clear dashboard to track posted crops, orders, and requests, simplifying farm business management.
+
+## Agriculture Community Support
+
+The platform is designed for farmers, traders, and agriculture enthusiasts to connect, exchange knowledge, and grow together.
