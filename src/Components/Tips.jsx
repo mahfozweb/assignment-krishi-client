@@ -19,7 +19,7 @@ const Tips = () => {
     {
       id: 2,
       image: photo2,
-      title: "Dr. Shafiqul Islam",
+      title: "Dr. Jasmin Akter",
       slogan: "Plant Pathology",
     },
     {
