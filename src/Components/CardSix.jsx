@@ -12,6 +12,7 @@ const CardSix = () => {
         setCrops(data);
       });
   }, []);
+
   return (
     <div className=" bg-gradient-to-r from-emerald-200 via-lime-200 to-yellow-100">
       <h1 className="font-bold text-4xl p-10">Latest Crops</h1>

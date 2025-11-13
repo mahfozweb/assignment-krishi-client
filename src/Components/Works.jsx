@@ -8,7 +8,7 @@ const Works = () => {
     <>
       <div>
         <h1 className="text-5xl font-bold py-20">Working Procedure</h1>
-        <div className="flex    justify-between  gap-10 px-10 py-10">
+        <div className="flex flex-col  md:flex-row    justify-between  gap-10 px-10 py-10">
           <div className="w-full md:w-[50%]">
             {/* <div>
               <img className="rounded-[10px]" src={tomatoImage} alt="" />

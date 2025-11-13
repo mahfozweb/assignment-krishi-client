@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "New Rice Variety Boosts Yield by 20%",
+    "date": "2025-11-10",
+    "image": "https://images.unsplash.com/photo-1606761568499-6d2451b23c9e",
+    "description": "The Bangladesh Agricultural Research Institute introduced a new rice variety that increases yield and is resistant to floods."
+  },
+  {
+    "id": 2,
+    "title": "Government Launches Farmer Subsidy Program",
+    "date": "2025-11-05",
+    "image": "https://images.unsplash.com/photo-1599351430140-8c6cdb78a0b8",
+    "description": "The government announced a new subsidy program to support small farmers with fertilizer and seeds."
+  },
+  {
+    "id": 3,
+    "title": "Organic Farming Trend Rising in Rural Areas",
+    "date": "2025-11-01",
+    "image": "https://images.unsplash.com/photo-1615486513288-d5f0f62e32e9",
+    "description": "More farmers are adopting organic farming methods for better soil health and sustainable production."
+  }
+]

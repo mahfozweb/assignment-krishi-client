@@ -2,6 +2,9 @@ import React from "react";
 import Hero from "../Components/Hero";
 import Works from "../Components/Works";
 import CardSix from "../Components/CardSix";
+import Blogs from "../Components/Blogs";
+import Feature from "../Components/Feature";
+import Tips from "../Components/Tips";
 
 const Home = () => {
   let marqueeRef = null;
@@ -47,6 +50,15 @@ const Home = () => {
       </div>
       <div className="bg-gradient-to-r from-blue-100 to-green-300">
         <Works></Works>
+      </div>
+      <div>
+        <Blogs></Blogs>
+      </div>
+      <div>
+        <Feature></Feature>
+      </div>
+      <div>
+        <Tips></Tips>
       </div>
     </>
   );
