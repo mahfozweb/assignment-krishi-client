@@ -87,21 +87,11 @@ const CardDetails = () => {
         console.log("after post", data);
         if (data.insertedId) {
           toast.success(" Interest Crop submitted successfully!");
+          e.target.reset();
         }
       });
-    e.target.reset();
   };
 
-  // const handleOneSubmitInterest = () => {
-  //   fetch("https://assignment-krishi-server.vercel.app/validation_interest")
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       submitValidationSubmit(data);
-  //       const alreadySubmitted = validationSubmit.find(
-  //         (item) => item.cropId == _id && item.email === user?.email
-  //       );
-  //     });
-  // };
   useEffect(() => {
     fetch("https://assignment-krishi-server.vercel.app/validation_interest")
       .then((res) => res.json())
