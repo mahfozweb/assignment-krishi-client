@@ -10,11 +10,13 @@ const CardDetails = () => {
   const [interest, setInterest] = useState([]);
   const { user } = use(AuthContext);
   const [crops, setCrops] = useState({});
-  console.log(crops?.owner?.ownerEmail);
+  const [validationSubmit, submitValidationSubmit] = useState([]);
+  console.log(validationSubmit);
+  // console.log(crops?.owner?.ownerEmail);
 
   const owner = crops?.owner?.ownerEmail;
   const cropName = crops?.name;
-  console.log(cropName);
+  // console.log(cropName);
   const {
     _id,
     name,
@@ -26,9 +28,12 @@ const CardDetails = () => {
     description,
     location,
   } = crops;
-  // console.log(name, image);
+  const alreadySubmitted = validationSubmit.find(
+    (item) => item.cropId === _id && item.email === user?.email
+  );
+
   const data = useParams();
-  //   console.log(data.id);
+
   useEffect(() => {
     fetch(`https://assignment-krishi-server.vercel.app/crops/${data.id}`)
       .then((res) => res.json())
@@ -56,8 +61,10 @@ const CardDetails = () => {
     const quantity = Number(e.target.quantity.value);
     if (quantity < 1) {
       setError("Quantity must be at least 1");
+      toast.success("Quantity must be at least 1");
       return;
     }
+
     const newInterest = {
       cropId: _id,
       crop: cropName,
@@ -84,6 +91,24 @@ const CardDetails = () => {
       });
     e.target.reset();
   };
+
+  // const handleOneSubmitInterest = () => {
+  //   fetch("https://assignment-krishi-server.vercel.app/validation_interest")
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       submitValidationSubmit(data);
+  //       const alreadySubmitted = validationSubmit.find(
+  //         (item) => item.cropId == _id && item.email === user?.email
+  //       );
+  //     });
+  // };
+  useEffect(() => {
+    fetch("https://assignment-krishi-server.vercel.app/validation_interest")
+      .then((res) => res.json())
+      .then((data) => {
+        submitValidationSubmit(data);
+      });
+  }, []);
 
   return (
     <div>
@@ -138,6 +163,7 @@ const CardDetails = () => {
                   type="email"
                   required
                   name="email"
+                  disabled={alreadySubmitted}
                   className="input w-full"
                   placeholder="provide your email"
                 />
@@ -148,6 +174,7 @@ const CardDetails = () => {
                 <input
                   type="text"
                   name="name"
+                  disabled={alreadySubmitted}
                   className="input w-full"
                   placeholder="Name"
                 />
@@ -158,6 +185,7 @@ const CardDetails = () => {
                 <input
                   type="text"
                   name="message"
+                  disabled={alreadySubmitted}
                   className="input w-full"
                   placeholder="Message"
                 />
@@ -169,6 +197,7 @@ const CardDetails = () => {
                   type="text"
                   name="quantity"
                   className="input w-full"
+                  disabled={alreadySubmitted}
                   placeholder="Quantity"
                 />
               </div>
@@ -177,6 +206,7 @@ const CardDetails = () => {
                 <input
                   type="text"
                   name="price"
+                  disabled={alreadySubmitted}
                   className="input w-full"
                   placeholder="total price"
                 />
@@ -186,13 +216,25 @@ const CardDetails = () => {
                 <label className="label mb-1">Status</label>
                 <input
                   type="text"
+                  disabled={alreadySubmitted}
                   name="status"
                   className="input w-full"
                   defaultValue="pending"
                 />
               </div>
 
-              <button className="btn btn-neutral w-full mt-4">Submit</button>
+              <button
+                disabled={alreadySubmitted}
+                // onClick={handleOneSubmitInterest}
+                className="btn btn-neutral w-full mt-4"
+              >
+                Submit
+              </button>
+              {alreadySubmitted && (
+                <p className="text-red-500 text-3xl mt-2">
+                  You’ve already sent an interest!
+                </p>
+              )}
 
               {error && <p className="text-red-400 mt-2">{error}</p>}
             </form>
