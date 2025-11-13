@@ -62,11 +62,15 @@ const AllCrops = () => {
         </label>
         <button className="btn btn-secondary ml-5">search</button>
       </form>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 pb-10">
-        {crops.map((crop) => (
-          <Crops crop={crop}></Crops>
-        ))}
-      </div>
+      {crops.length > 0 ? (
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 pb-10">
+          {crops.map((crop) => (
+            <Crops crop={crop}></Crops>
+          ))}
+        </div>
+      ) : (
+        <p className="text-5xl text-red-700 font-bold ">No results found</p>
+      )}
     </div>
   );
 };
