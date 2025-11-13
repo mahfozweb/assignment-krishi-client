@@ -53,7 +53,11 @@ const CardDetails = () => {
     const email = e.target.email.value;
     const message = e.target.message.value;
     const status = e.target.status.value;
-    const quantity = e.target.quantity.value;
+    const quantity = Number(e.target.quantity.value);
+    if (quantity < 1) {
+      setError("Quantity must be at least 1");
+      return;
+    }
     const newInterest = {
       cropId: _id,
       crop: cropName,
