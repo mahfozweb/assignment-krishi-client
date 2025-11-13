@@ -111,7 +111,6 @@ const MyPost = () => {
           My Posted Crops
         </h1>
 
-        {/*  Responsive Scroll for Small Screens */}
         <div className="overflow-x-auto">
           <table className="table w-full border text-sm md:text-base">
             <thead>
@@ -158,14 +157,11 @@ const MyPost = () => {
             ))}
           </table>
         </div>
-        {/* modal */}
       </div>
-      {/* Modal Section */}
+
       {isModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 px-4">
-          {/* Modal Box */}
           <div className="bg-white p-6 md:p-8 rounded-2xl shadow-2xl relative w-full max-w-3xl max-h-[90vh] overflow-y-auto">
-            {/* Close Button */}
             <button
               className="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl"
               onClick={closeModal}
@@ -173,7 +169,6 @@ const MyPost = () => {
               ✖
             </button>
 
-            {/* Header */}
             <div className="text-center mb-6">
               <h1 className="text-3xl md:text-4xl font-bold text-green-700">
                 Update Crop
@@ -183,12 +178,10 @@ const MyPost = () => {
               </p>
             </div>
 
-            {/* ✅ Responsive Form */}
             <form
               onSubmit={handleLogin}
               className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6"
             >
-              {/* Crop Name */}
               <div>
                 <label className="block font-semibold mb-1 text-sm md:text-base">
                   Name
@@ -202,7 +195,6 @@ const MyPost = () => {
                 />
               </div>
 
-              {/* Price per Unit */}
               <div>
                 <label className="block font-semibold mb-1 text-sm md:text-base">
                   Price per Unit
@@ -216,7 +208,6 @@ const MyPost = () => {
                 />
               </div>
 
-              {/* Unit */}
               <div>
                 <label className="block font-semibold mb-1 text-sm md:text-base">
                   Unit
@@ -230,7 +221,6 @@ const MyPost = () => {
                 />
               </div>
 
-              {/* Quantity */}
               <div>
                 <label className="block font-semibold mb-1 text-sm md:text-base">
                   Quantity
@@ -244,7 +234,6 @@ const MyPost = () => {
                 />
               </div>
 
-              {/* Image URL */}
               <div className="sm:col-span-2">
                 <label className="block font-semibold mb-1 text-sm md:text-base">
                   Image URL
@@ -258,7 +247,6 @@ const MyPost = () => {
                 />
               </div>
 
-              {/* Description */}
               <div className="sm:col-span-2">
                 <label className="block font-semibold mb-1 text-sm md:text-base">
                   Description
@@ -271,7 +259,6 @@ const MyPost = () => {
                 ></textarea>
               </div>
 
-              {/* Location */}
               <div className="sm:col-span-2">
                 <label className="block font-semibold mb-1 text-sm md:text-base">
                   Location
@@ -285,7 +272,6 @@ const MyPost = () => {
                 />
               </div>
 
-              {/* Buttons */}
               <div className="sm:col-span-2 flex flex-col sm:flex-row justify-end gap-3 mt-4">
                 <button
                   type="button"
