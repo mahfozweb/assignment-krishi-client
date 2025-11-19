@@ -167,16 +167,11 @@ Follow the steps below to run **KrishiLink** locally.
 
 ## 📥 1. Clone the Repository
 
-`````bash
+```bash
 git clone https://github.com/mahfozweb/krishilink.git
 cd krishilink
 
 
 
-# 1. **Clone the repository**
 
-# ```bash
-# git clone https://github.com/mahfozweb/greenplant.git
-# git clone https://github.com/mahfozweb/greenplant.git
-# ````
-`````
+```
