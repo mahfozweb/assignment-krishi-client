@@ -39,7 +39,7 @@ const Header = () => {
             </li>
             {user && (
               <li>
-                <a>Add crops</a>
+                <NavLink to="add-crops">Add Crops</NavLink>
               </li>
             )}
           </ul>
