@@ -229,3 +229,9 @@ You are free to use, copy, modify, merge, publish, distribute, sublicense, and/o
 For more details, see the [LICENSE.txt](LICENSE.txt) file included in this repository.
 
 ---
+
+## Contact
+
+**Live URL:** [Live Site](https://assignment-krishi-client.netlify.app/)
+**Email:** [username](mahfoz81000@gmail.com)
+**Portfolio:** [Portfolio](https://assignment-krishi-client.netlify.app/)
