@@ -10,6 +10,8 @@ KrishiLink is a comprehensive agricultural marketplace designed to connect farme
 It provides a platform where users can upload, manage, and sell their crops, while buyers can browse and request crops in real time.
 The system also offers crop news, farming tips, and best practices to support informed decision-making.
 
+## 📖 Project Overview :
+
 # 🎯 Objective
 
 - Facilitate direct interaction between farmers and buyers
@@ -41,25 +43,6 @@ The system also offers crop news, farming tips, and best practices to support in
 # 🚀 Deployment
 
 - The project is deployed on Vercel: [Click here to view](https://vercel.com/mahfozul-hoques-projects/assignment-krishi-server)
-
-## 📖 Project Overview
-
-GreenPlant is a modern **indoor plant e-commerce platform** built with **React** and **Firebase**.  
-It provides a curated collection of indoor plants with details such as **price, care level, stock availability, and description**.  
-Users can browse plants, view detailed information, register/login, and manage their profiles.
-
-**Screenshots:**
-
-<div align="center">
-  <img src="https://i.ibb.co.com/tMLcB5sB/1.jpg" width="200" alt="Snake Plant"/>
-  <img src="https://i.ibb.co.com/rRvwnJMy/2.jpg" width="200" alt="Aloe Vera"/>
-  <img src="https://i.ibb.co.com/gFtmNLwM/3.jpg" width="200" alt="Peace Lily"/>
-  <img src="https://i.ibb.co.com/RG0D1g08/4.jpg" width="200" alt="Fiddle Leaf Fig"/>
-  <img src="https://i.ibb.co.com/XxgVdWgW/5.jpg" width="200" alt="Monstera Deliciosa"/>
-  <img src="https://i.ibb.co.com/RGbX8dTp/6.jpg" width="200" alt="Spider Plant"/>
-</div>
-
----
 
 ## 🛠️ Technology Stack
 
