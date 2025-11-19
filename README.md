@@ -176,8 +176,10 @@ cd krishilink
 
 ## 📌 2. Navigate to Client Folder
 
+```bash
 cd client
 
 ## 📌 3. Install Dependencies
 
 npm install
+```
