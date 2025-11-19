@@ -6,10 +6,41 @@ A Smart Agricultural Marketplace for Buying, Selling, and Sharing Crop Insights
 
 # 📖 About the Project
 
-KrishiLink is a modern agricultural marketplace where users can buy, sell, and manage crops and vegetables efficiently.
-Users can upload their own crops, track requests, and manage their produce with admin controls for approvals or deletions.
-The platform allows buyers to browse available crops, place requests, and see real-time updates on quantities.
-Additionally, users can access crop news, farming tips, and best practices, making KrishiLink a complete hub for farmers and buyers.
+KrishiLink is a comprehensive agricultural marketplace designed to connect farmers, traders, and consumers.
+It provides a platform where users can upload, manage, and sell their crops, while buyers can browse and request crops in real time.
+The system also offers crop news, farming tips, and best practices to support informed decision-making.
+
+# 🎯 Objective
+
+- Facilitate direct interaction between farmers and buyers
+
+- Help farmers manage their crops efficiently
+
+- Provide reliable updates and insights on crop availability
+
+# 👥 Target Audience
+
+- Small and medium-scale farmers
+
+- Traders looking to buy crops directly
+
+- Consumers interested in fresh, local produce
+
+- Agricultural enthusiasts seeking news and tips
+
+# 📊 Key Metrics
+
+- Number of active users (farmers & buyers)
+
+- Crop uploads and approved requests
+
+- Transactions completed through the platform
+
+- Engagement with crop news and tips
+
+# 🚀 Deployment
+
+- The project is deployed on Vercel: [Click here to view](https://vercel.com/mahfozul-hoques-projects/assignment-krishi-server)
 
 ## 📖 Project Overview
 
