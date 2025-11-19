@@ -94,8 +94,72 @@ The system also offers crop news, farming tips, and best practices to support in
     Hosted on **Vercel** for fast, reliable performance.  
     Built with scalability in mind to handle increasing users and data.  
     Continuous updates and improvements for enhanced functionality.
+    ## 🛠️ Tech Stack
 
-## 🛠️ Technology Stack
+### 🎨 Frontend
+
+<div align="left">
+
+| Technology       | Icon                                                                                                |
+| ---------------- | --------------------------------------------------------------------------------------------------- |
+| **HTML5**        | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="40"/> |
+| **CSS3**         | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="40"/>   |
+| **Tailwind CSS** | <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" width="40"/>          |
+| **React.js**     | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="40"/> |
+
+</div>
+
+---
+
+### 🧩 Backend
+
+<div align="left">
+
+| Technology     | Icon                                                                                                                                                              |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Node.js**    | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="40"/>                                                             |
+| **Express.js** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="40" style="background:white; padding:5px; border-radius:6px;"/> |
+
+</div>
+
+---
+
+### 🗄️ Database
+
+<div align="left">
+
+| Technology  | Icon                                                                                                    |
+| ----------- | ------------------------------------------------------------------------------------------------------- |
+| **MongoDB** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" width="40"/> |
+
+</div>
+
+---
+
+### 🔐 Authentication
+
+<div align="left">
+
+| Technology               | Icon                                                                                         |
+| ------------------------ | -------------------------------------------------------------------------------------------- |
+| **Firebase Auth**        | <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" width="40"/>         |
+| **JWT (JSON Web Token)** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jwt/jwt-plain.svg" width="40"/> |
+
+</div>
+
+---
+
+### 🚀 Deployment
+
+<div align="left">
+
+| Platform   | Icon                                                                             |
+| ---------- | -------------------------------------------------------------------------------- |
+| **Vercel** | <img src="https://www.vectorlogo.zone/logos/vercel/vercel-icon.svg" width="40"/> |
+
+</div>
+
+<!-- ## 🛠️ Technology Stack
 
 ### Languages
 
@@ -136,7 +200,7 @@ The system also offers crop news, farming tips, and best practices to support in
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" width="40" height="40" alt="Postman"/>
 </div>
 
----
+--- -->
 
 ## ✨ Features
 
