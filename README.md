@@ -211,10 +211,6 @@ npm start
 
 - Backend: http://localhost:4000
 
-## 🚀 Project Live Link
-
-[Click here to view the live site](https://assignment-krishi-client.netlify.app/)
-
 ---
 
 # 📜 License
