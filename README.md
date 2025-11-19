@@ -159,11 +159,24 @@ The system also offers crop news, farming tips, and best practices to support in
 
 </div>
 
-## 🚀 Installation / Local Setup
+# 🚀 Installation / Local Setup
 
-1. **Clone the repository**
+Follow the steps below to run **KrishiLink** locally.
 
-```bash
-git clone https://github.com/mahfozweb/greenplant.git
-git clone https://github.com/mahfozweb/greenplant.git
-```
+---
+
+## 📥 1. Clone the Repository
+
+`````bash
+git clone https://github.com/mahfozweb/krishilink.git
+cd krishilink
+
+
+
+# 1. **Clone the repository**
+
+# ```bash
+# git clone https://github.com/mahfozweb/greenplant.git
+# git clone https://github.com/mahfozweb/greenplant.git
+# ````
+`````
