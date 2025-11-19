@@ -170,8 +170,14 @@ Follow the steps below to run **KrishiLink** locally.
 ```bash
 git clone https://github.com/mahfozweb/krishilink.git
 cd krishilink
-
-
-
-
 ```
+
+# 🖥️ FRONTEND SETUP :
+
+## 📌 2. Navigate to Client Folder
+
+cd client
+
+## 📌 3. Install Dependencies
+
+npm install
