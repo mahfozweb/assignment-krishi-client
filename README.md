@@ -190,10 +190,6 @@ The system also offers crop news, farming tips, and best practices to support in
 - **Node.js** – JavaScript runtime
 - **Express.js** – Backend framework for building APIs
 - **MongoDB Atlas** – Cloud database service
-- **Mongoose** – ODM to interact with MongoDB
-- **dotenv** – Environment variables management
-- **jsonwebtoken (JWT)** – Authentication tokens
-- **bcryptjs** – Password hashing
 
 ### ⚡ Dev Tools
 
