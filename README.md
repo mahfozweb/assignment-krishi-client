@@ -2,7 +2,21 @@
 
 A Smart Agricultural Marketplace for Buying, Selling, and Sharing Crop Insights
 
-<!-- ![GreenPlant Banner](https://i.ibb.co/p6WJjLzv/mahfozgithub-Banner.png) -->
+## Table of Contents
+
+- [About the Project](#about-the-project)
+- [Project Overview](#project-overview)
+- [Key Features](#key-features)
+- [Tech Stack](#tech-stack)
+- [Dependencies](#dependencies)
+- [Installation️ & Setup](#installation--setup)
+- [Folder Structure](#folder-structure)
+- [Contributions](#contributions)
+- [How to Contribute](#how-to-contribute)
+- [License](#license)
+- [Contact](#contact)
+
+---
 
 # 📖 About the Project
 
