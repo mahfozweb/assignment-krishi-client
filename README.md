@@ -168,11 +168,23 @@ Follow the steps below to run **KrishiLink** locally.
 ## 📥 1. Clone the Repository
 
 ```bash
-git clone https://github.com/mahfozweb/krishilink.git
+git clone https://github.com/mahfozweb/assignment-krishi-client.git
 cd krishilink
+npm install
+# Create Environment File
+# This file will store your backend API URL and Firebase config
+VITE_apiKey=yourApiKey
+VITE_authDomain=yourAuthDomain
+VITE_projectId=yourProjectId
+VITE_storageBucket=yourStorageBucket
+VITE_messagingSenderId=yourMessagingSenderId
+VITE_appId=yourAppId
+
+VITE_SERVER_URL=http://localhost:4000
+
 ```
 
-# 🖥️ FRONTEND SETUP :
+<!-- # 🖥️ FRONTEND SETUP :
 
 ## 📌 2. Navigate to Client Folder
 
@@ -182,4 +194,4 @@ cd client
 ## 📌 3. Install Dependencies
 
 npm install
-```
+``` -->
