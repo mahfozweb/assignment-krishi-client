@@ -181,17 +181,32 @@ VITE_messagingSenderId=yourMessagingSenderId
 VITE_appId=yourAppId
 
 VITE_SERVER_URL=http://localhost:4000
+# Run Frontend
+npm run dev
 
 ```
 
-<!-- # 🖥️ FRONTEND SETUP :
-
-## 📌 2. Navigate to Client Folder
+# 🗄️ BACKEND SETUP
 
 ```bash
-cd client
-
-## 📌 3. Install Dependencies
-
+# Open a New Terminal & Navigate to Server Folder
+cd ../server
+# Install Dependencies
 npm install
-``` -->
+# Create Backend .env File
+PORT=4000
+MONGO_URL=yourMongoDBURL
+JWT_SECRET=yourSecretKey
+# Start Backend Server
+npm start
+
+
+```
+
+# 🎉 All Setup Done!
+
+## Your project is now running locally with:
+
+- Frontend: http://localhost:5173
+
+- Backend: http://localhost:4000
