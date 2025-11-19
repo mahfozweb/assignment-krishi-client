@@ -11,8 +11,7 @@ A Smart Agricultural Marketplace for Buying, Selling, and Sharing Crop Insights
 - [Dependencies](#dependencies)
 - [Installation️ & Setup](#installation--setup)
 - [Folder Structure](#folder-structure)
-- [Contributions](#contributions)
-- [How to Contribute](#how-to-contribute)
+
 - [License](#license)
 - [Contact](#contact)
 
