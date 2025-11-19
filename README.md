@@ -173,6 +173,36 @@ The system also offers crop news, farming tips, and best practices to support in
 
 </div>
 
+# 📦 Dependencies
+
+### 🖥️ Frontend (Client)
+
+- **React.js** – Frontend library for building UI
+- **React Router DOM** – Client-side routing
+- **Tailwind CSS** – Utility-first CSS framework for styling
+- **DaisyUI** – Component library for Tailwind
+- **Firebase** – Authentication & cloud services
+- **React Hot Toast** – Notifications
+- **Axios / Fetch API** – For HTTP requests
+
+### 🗄️ Backend (Server)
+
+- **Node.js** – JavaScript runtime
+- **Express.js** – Backend framework for building APIs
+- **MongoDB Atlas** – Cloud database service
+- **Mongoose** – ODM to interact with MongoDB
+- **dotenv** – Environment variables management
+- **jsonwebtoken (JWT)** – Authentication tokens
+- **bcryptjs** – Password hashing
+
+### ⚡ Dev Tools
+
+- **VS Code** – Code editor
+- **Postman** – API testing
+- **Git & GitHub** – Version control and repository management
+- **Vercel** – Deployment platform for frontend
+- **MongoDB Atlas** – Deployment platform for database
+
 # 🚀 Installation / Local Setup
 
 Follow the steps below to run **KrishiLink** locally.
