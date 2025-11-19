@@ -165,7 +165,7 @@ Follow the steps below to run **KrishiLink** locally.
 
 ---
 
-## 📥 1. Clone the Repository
+## 📥 🖥️ FRONTEND SETUP
 
 ```bash
 git clone https://github.com/mahfozweb/assignment-krishi-client.git
@@ -210,3 +210,7 @@ npm start
 - Frontend: http://localhost:5173
 
 - Backend: http://localhost:4000
+
+## 🚀 Project Live Link
+
+[Click here to view the live site](https://assignment-krishi-client.netlify.app/)
