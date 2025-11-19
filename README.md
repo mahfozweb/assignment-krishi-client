@@ -46,14 +46,54 @@ The system also offers crop news, farming tips, and best practices to support in
 
 ## ✨ Key Features
 
-- ✅ **Browse Crops & Vegetables:** View all available crops uploaded by other users.
-- ✅ **Upload Your Crops:** Users can upload their own crops or vegetables for sale.
-- ✅ **Admin Control:** Users have admin rights on their uploaded crops — accept or delete requests.
-- ✅ **Request Crops:** Users can send purchase requests for crops they want to buy.
-- ✅ **Automatic Quantity Update:** Accepted requests reduce the available crop quantity automatically.
-- ✅ **User Authentication:** Login and registration functionality with secure access.
-- ✅ **Crop News & Tips:** Access latest agricultural news and helpful tips.
-- ✅ **Real-time Updates:** Users can track the status of their crop requests instantly.
+1. **Browse Crops & Vegetables**  
+   Effortlessly explore a variety of crops and vegetables uploaded by other users.  
+   Filter by category, price, and care level to quickly find what you need.  
+   Real-time availability ensures accurate stock information.
+
+2. **Upload Your Crops**  
+   Users can easily upload their own crops or vegetables for sale.  
+   Add details like crop name, category, price, quantity, care level, description, and images.  
+   Manage all your uploads efficiently from your dashboard.
+
+3. **Admin Control for Uploaded Crops**  
+   Each user acts as an admin for their uploaded crops.  
+   Approve or delete incoming requests from other users.  
+   Monitor crop quantity and ensure proper inventory management.
+
+4. **Request & Purchase Crops**  
+   Users can send requests to buy crops from others.  
+   Accepting a request automatically reduces the available quantity.  
+   Track the status of your requests in real-time.
+
+5. **User Authentication**  
+   Secure login and registration system using Firebase Authentication.  
+   Role-based access ensures privacy and control over user data.  
+   Forgot password and reset functionality for seamless account management.
+
+6. **Crop News & Tips**  
+   Access the latest agricultural news and updates.  
+   Get practical farming tips and insights to improve crop yield and quality.
+
+7. **User Dashboard**  
+   Manage your uploaded crops, requests, and profile from a single dashboard.  
+   Monitor accepted and pending requests.  
+   Edit or remove crops with ease.
+
+8. **Admin Dashboard (Optional Future Enhancement)**  
+   Comprehensive control over platform management.  
+   View, approve, or manage user requests and uploads.  
+   User management: Add, edit, or deactivate user accounts.
+
+9. **Responsive & Modern Design**  
+   Fully responsive UI built with Tailwind CSS and DaisyUI.  
+   Optimized for desktop, tablet, and mobile devices.  
+   Smooth and intuitive navigation for a seamless user experience.
+
+10. **Deployment & Scalability**  
+    Hosted on **Vercel** for fast, reliable performance.  
+    Built with scalability in mind to handle increasing users and data.  
+    Continuous updates and improvements for enhanced functionality.
 
 ## 🛠️ Technology Stack
 
