@@ -267,5 +267,5 @@ For more details, see the [LICENSE.txt](LICENSE.txt) file included in this repos
 
 ## 📫 Contact
 
-- **🌐 Project Live Link:** [KrishiLink Live Site](https://assignment-krishi-client.netlify.app/)
+- **🌐 Project Live Link:** [KrishiLink Live Site](https://young-romahfoz123d.surge.sh/all-crops/)
 - **✉️ Email:** [mahfoz81000@gmail.com](mailto:mahfoz81000@gmail.com)
