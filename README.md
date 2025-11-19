@@ -214,3 +214,18 @@ npm start
 ## 🚀 Project Live Link
 
 [Click here to view the live site](https://assignment-krishi-client.netlify.app/)
+
+---
+
+# 📜 License
+
+This project is **licensed under the MIT License** – one of the most permissive open-source licenses.  
+You are free to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of this project, under the following conditions:
+
+- You **must include the original copyright notice** and this permission notice in all copies or substantial portions of the project.
+- The software is provided **“as is”**, without warranty of any kind, express or implied.
+- The authors are **not responsible for any damages or liabilities** arising from the use of this project.
+
+For more details, see the [LICENSE.txt](LICENSE.txt) file included in this repository.
+
+---
