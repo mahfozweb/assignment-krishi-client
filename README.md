@@ -1,8 +1,17 @@
-# 🌿 GreenPlant - Indoor Plant Store
+# 🌿 KrishiLink – Connecting Farmers, Traders & Consumers
 
-![GreenPlant Banner](https://i.ibb.co/p6WJjLzv/mahfozgithub-Banner.png)
+# KrishiLink – Connecting Farmers, Traders & Consumers
 
----
+<sub>A Smart Agricultural Marketplace for Buying, Selling, and Sharing Crop Insights</sub>
+
+<!-- ![GreenPlant Banner](https://i.ibb.co/p6WJjLzv/mahfozgithub-Banner.png) -->
+
+# 📖 About the Project
+
+KrishiLink is a modern agricultural marketplace where users can buy, sell, and manage crops and vegetables efficiently.
+Users can upload their own crops, track requests, and manage their produce with admin controls for approvals or deletions.
+The platform allows buyers to browse available crops, place requests, and see real-time updates on quantities.
+Additionally, users can access crop news, farming tips, and best practices, making KrishiLink a complete hub for farmers and buyers.
 
 ## 📖 Project Overview
 
