@@ -230,8 +230,7 @@ For more details, see the [LICENSE.txt](LICENSE.txt) file included in this repos
 
 ---
 
-## Contact
+## 📫 Contact
 
-**Live URL:** [Live Site](https://assignment-krishi-client.netlify.app/)
-**Email:** [username](mahfoz81000@gmail.com)
-**Portfolio:** [Portfolio](https://assignment-krishi-client.netlify.app/)
+- **🌐 Project Live Link:** [KrishiLink Live Site](https://assignment-krishi-client.netlify.app/)
+- **✉️ Email:** [mahfoz81000@gmail.com](mailto:mahfoz81000@gmail.com)
