@@ -44,6 +44,17 @@ The system also offers crop news, farming tips, and best practices to support in
 
 - The project is deployed on Vercel: [Click here to view](https://vercel.com/mahfozul-hoques-projects/assignment-krishi-server)
 
+## ✨ Key Features
+
+- ✅ **Browse Crops & Vegetables:** View all available crops uploaded by other users.
+- ✅ **Upload Your Crops:** Users can upload their own crops or vegetables for sale.
+- ✅ **Admin Control:** Users have admin rights on their uploaded crops — accept or delete requests.
+- ✅ **Request Crops:** Users can send purchase requests for crops they want to buy.
+- ✅ **Automatic Quantity Update:** Accepted requests reduce the available crop quantity automatically.
+- ✅ **User Authentication:** Login and registration functionality with secure access.
+- ✅ **Crop News & Tips:** Access latest agricultural news and helpful tips.
+- ✅ **Real-time Updates:** Users can track the status of their crop requests instantly.
+
 ## 🛠️ Technology Stack
 
 ### Languages
