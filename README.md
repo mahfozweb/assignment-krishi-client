@@ -1,8 +1,6 @@
 # 🌿 KrishiLink – Connecting Farmers, Traders & Consumers
 
-# KrishiLink – Connecting Farmers, Traders & Consumers
-
-<sub>A Smart Agricultural Marketplace for Buying, Selling, and Sharing Crop Insights</sub>
+A Smart Agricultural Marketplace for Buying, Selling, and Sharing Crop Insights
 
 <!-- ![GreenPlant Banner](https://i.ibb.co/p6WJjLzv/mahfozgithub-Banner.png) -->
 
